@@ -5,11 +5,23 @@ body{
     background-image: url("https://cs9.pikabu.ru/post_img/big/2017/11/08/8/1510143183130378295.jpg");
 }
 .bla{
-    width: 90%;
-    margin-left: 20px;
     display: flex;
-    align-content: space-between;
-    flex-direction: column;
+}
+.bla > b{
+    flex-basis: 160px;
+    min-width: 160px;
+    max-width: 160px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.bla > input,textarea,select{
+    flex-grow: 1;
+}
+
+input + input{
+    margin-left: 20px;
 }
 .contactForm{
      background: rgba(255,245,215,0);
@@ -23,61 +35,4 @@ body{
      left: 50%;
      transform: translate(-50%, -50%);
      color: #fff;
-}
-.yourName{
-    display: flex;
-    justify-content: space-between;
-}
-.yourName > input{
-    width: 40%;
-    height: 23px;
-}
-.yourEmail{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.yourEmail > input{
-    width: 585px;
-    height: 23px;
-}
-.phone{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.phone > input{
-    width: 158px;
-    height: 23px;
-}
-.selectClass{
-    width: 588px;
-    background: #fff;
-    height: 23px;
-}
-.messageSubject{
-    letter-spacing: -1px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-.message{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.message > textarea{
-    width: 583px;
-    height: 80px;
-}
-footer > hr{
-    opacity: 0.7;
-    margin-top: 15px
-}
-footer > button{
-    background-color: Transparent;
-    margin-top: 10px;
-    width: 590px;
-    height: 35px;
-    float: right;
 }
